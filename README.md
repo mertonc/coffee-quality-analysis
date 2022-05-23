@@ -7,7 +7,7 @@ This project focuses on cleaning, analyzing, and interpreting coffee bean data f
 # My Findings
 
 1. Comparison of Different Classifiers 
-
+![Comparison of Different ML Classifiers](/imag/coffee-quality-comparison-classifiers.png)
 
 
 # Libraries
