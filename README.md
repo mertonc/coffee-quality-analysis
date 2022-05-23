@@ -4,11 +4,14 @@
 # Description
 This project focuses on cleaning, analyzing, and interpreting coffee bean data from Coffee Quality Institute on Kaggle (https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi). The code performs simple machine learning testing on predicting made labels of 'good' and 'not good' coffee. Data illustrations are also done to better understand the data and find other interesting information. 
 
-# Getting Started
+# My Findings
 
-## Dependencies
-- Libaries: sklearn, pandas, numpy, matplotlib, seaborn, scipy
+1. Comparison of Different Classifiers 
 
+
+
+# Libraries
+- sklearn, pandas, numpy, matplotlib, seaborn, scipy
 
 # Authors
 - Merton Chen
