@@ -6,8 +6,17 @@ This project focuses on cleaning, analyzing, and interpreting coffee bean data f
 
 # My Findings
 
-1. Comparison of Different Classifiers 
+1. Comparison of Different Classifiers
+
 ![Comparison of Different ML Classifiers](/imag/coffee-quality-comparison-classifiers.png)
+
+2. Scatterplot of Altitude and Processing Method
+
+![Scatterplot of Altitude and Processing Method](/imag/altitude_processingmethod.png)
+
+3. Correlation Matrix of Different Factors
+
+![Correlation Matrix](/imag/correlation_matrix.png)
 
 # Libraries
 - sklearn, pandas, numpy, matplotlib, seaborn, scipy
