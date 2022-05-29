@@ -5,7 +5,7 @@
 This project focuses on cleaning, analyzing, and interpreting coffee bean data from Coffee Quality Institute on Kaggle (https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi). The code performs simple machine learning testing on predicting made labels of 'good' and 'not good' coffee. Data illustrations are also done to better understand the data and find other interesting information. 
 
 # Code
-* Cleaning Data
+* Clean and uniform data
 ```python
 # select columns that we want from the data
 columns = ["Species", "Country.of.Origin", "Processing.Method", "Aroma", "Flavor", "Aftertaste",
@@ -39,7 +39,7 @@ sns.boxplot(data=df, y="altitude_mean_meters")
 plt.show()
 ```
 
-* Prepare Data
+* Prepare and process data
 ```python 
 #replace processing methodss with quantified numbers 0 and 1
 df['processing_method'] = df['processing_method'].replace(
@@ -75,7 +75,7 @@ df['label'] = np.where(df['total_cup_points'] > 80, 1, 0)
 Y = df.label
 ```
 
-* Data Analysis
+* Create training and testing split. Implement different ML classifiers
 ```python
 #create train test split
 x_train, x_test, y_train, y_test = train_test_split(
