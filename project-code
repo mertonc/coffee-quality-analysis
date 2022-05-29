@@ -1,30 +1,7 @@
 # Cleaning Data
 
 ```python
-#select columns that we want from the data
+
 columns = ["Species", "Country.of.Origin", "Processing.Method", "Aroma", "Flavor", "Aftertaste",
            "Acidity", "Body", "Balance", "Uniformity", "Moisture", "Total.Cup.Points", "unit_of_measurement", "altitude_mean_meters"]
-
-# cleaning data and making format uniform
-df = df[columns]
-df.columns = df.columns.str.replace('.', '_')
-df.columns = df.columns.str.lower()
-
-# make sure metrics are all in meters
-convert = df['unit_of_measurement'].eq('feet')
-df.loc[convert, ['altitude_mean_meters']] /= 3.281
-
-df = df.drop(columns="unit_of_measurement")
-
-# clean data from impossible altitudes
-# number is highest altitude in the world
-df = df[~(df["altitude_mean_meters"] > 8848)]
-df.isnull().sum()
-df = df.dropna()
-
-df.describe()  # show overview of stats. See that there is altitude with meters of 1 or 4000+
-# need to find outliers
-
-# find outliers that are greater than 3
-df = df[~(np.abs(stats.zscore(df["altitude_mean_meters"])) > 3)]
 ```
