@@ -1,0 +1,7 @@
+# Cleaning Data
+
+```python
+
+columns = ["Species", "Country.of.Origin", "Processing.Method", "Aroma", "Flavor", "Aftertaste",
+           "Acidity", "Body", "Balance", "Uniformity", "Moisture", "Total.Cup.Points", "unit_of_measurement", "altitude_mean_meters"]
+```
